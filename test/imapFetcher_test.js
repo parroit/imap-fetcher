@@ -60,7 +60,7 @@ describe('imapFetcher',function(){
             });
 
             it("go to disconnected upon disconnection",function(done){
-                this.timeout(5000);
+                this.timeout(25000);
                 transport.connect(function(){
 
                     transport.disconnect(function(){
