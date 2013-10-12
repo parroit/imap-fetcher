@@ -1,5 +1,5 @@
 {
-  "name": "imapFetcher",
+  "name": "imap-fetcher",
   "description": "Fetches mail messages from imap and publish them to corriera event bus",
   "version": "0.1.0",
   "homepage": "https://github.com/parroit/imapFetcher",

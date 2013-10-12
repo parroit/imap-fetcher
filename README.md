@@ -1,4 +1,4 @@
-# imapFetcher [![Build Status](https://secure.travis-ci.org/parroit/imapFetcher.png?branch=master)](http://travis-ci.org/parroit/imapFetcher) [![Npm module](https://badge.fury.io/js/imapFetcher.png)](https://npmjs.org/package/imapFetcher)
+# imapFetcher [![Build Status](https://secure.travis-ci.org/parroit/imap-fetcher.png?branch=master)](http://travis-ci.org/parroit/imap-fetcher) [![Npm module](https://badge.fury.io/js/imap-fetcher.png)](https://npmjs.org/package/imap-fetcher)
 
 Fetches mail messages from imap and publish them to [corriera event bus](https://github.com/parroit/corriera)
 
