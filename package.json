@@ -1,7 +1,7 @@
 {
   "name": "imap-fetcher",
   "description": "Fetches mail messages from imap and publish them to corriera event bus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/parroit/imap-fetcher",
   "author": {
     "name": "Andrea Parodi",

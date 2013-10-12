@@ -26,6 +26,38 @@ describe('imapFetcher',function(){
     });
 
     describe("Fetcher",function() {
+        it("should throw on non object option argument",function(){
+            (function () {
+                new Fetcher(null,'','');
+            }).should.throw(Error);
+
+            (function () {
+                new Fetcher(undefined,'','');
+            }).should.throw(Error);
+
+            (function () {
+                new Fetcher(true,'','');
+            }).should.throw(Error);
+
+            (function () {
+                new Fetcher(/ /,'','');
+            }).should.throw(Error);
+
+            (function () {
+                new Fetcher(42,'','');
+            }).should.throw(Error);
+
+            (function () {
+                new Fetcher('some options','','');
+            }).should.throw(Error);
+
+            (function () {
+                new Fetcher(function(){},'','');
+            }).should.throw(Error);
+
+        });
+
+
         var transport = new Fetcher({
             user: process.env.MY_MAIL_ADDRESS,
             password: process.env.MY_MAIL_PASSWORD,
