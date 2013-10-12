@@ -104,7 +104,7 @@ describe('imapFetcher',function(){
                     messageStream.once('end', function() {
                         var fs = require("fs");
                         var expected = fs.readFileSync("./test/expected.msg","utf8");
-                        expect(buffer.replace(/\r\n/g,"")).to.be.equal(expected.replace(/\r\n/g,""));
+                        expect(buffer.replace(/[\r\n]/g,"")).to.be.equal(expected.replace(/[\r\n]/g,""));
                         transport.disconnect(function(){
                             done();
                         });
